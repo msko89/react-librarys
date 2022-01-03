@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, keyframes } from 'styled-components';
 
 // Create a Title component that'll render an <h1> tag with some styles
 const Title = styled.h1`
@@ -89,9 +89,31 @@ const PasswordInput = styled(Input).attrs({
   border: 2px solid aqua;
 `;
 
+// Create the keyframes
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+// Here we create a component that will rotate everything we pass in over two seconds
+const Rotate = styled.div`
+  display: inline-block;
+  animation: ${rotate} 2s linear infinite;
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+`;
+
 function StyledComponent() {
   return (
     <>
+      <>
+        <Rotate>&lt; 💅🏾 &gt;</Rotate>
+      </>
       <>
         <Input placeholder='A bigger text input' size='2em' />
         <br />
