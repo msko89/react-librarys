@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { Global, css, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const color = 'white';
@@ -68,9 +68,34 @@ const base = css`
   color: turquoise;
 `;
 
+const bounce = keyframes`
+  from, 20%, 53%, 80%, to {
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+`;
+
 function EmotionComponent() {
   return (
     <>
+      <Global
+        styles={css`
+          p {
+            color: hotpink !important;
+          }
+        `}
+      />
       <div
         css={css`
           padding: 32px;
@@ -99,6 +124,14 @@ function EmotionComponent() {
           danger styles.
         </div>
         <div css={[base, danger]}>This will be red</div>
+      </div>
+      <br />
+      <div
+        css={css`
+          animation: ${bounce} 1s ease infinite;
+        `}
+      >
+        some bouncing text!
       </div>
     </>
   );
