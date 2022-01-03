@@ -7,3 +7,5 @@
 ```properties
 npm i -D styled-components
 ```
+
+https://styled-components.com/docs/basics
