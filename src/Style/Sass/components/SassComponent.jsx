@@ -30,8 +30,12 @@ function SassComponent() {
       <p className='error'>error</p>
       <p className='warning'>warning</p>
       <br />
-      <div className='square-av'>message</div>
-      <div className='circle-av'>success2</div>
+      <div className='square-av'>square-av</div>
+      <div className='circle-av'>circle-av</div>
+      <br />
+      <div className='sidebar'>sidebar</div>
+      <br />
+      <div className='gray'>gray</div>
     </>
   );
 }
