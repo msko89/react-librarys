@@ -3,6 +3,7 @@ import StyledComponent from './Style/StyledComponent/components/StyledComponent'
 import StyledComponentAdvanced from './Style/StyledComponent/components/StyledComponentAdvanced';
 import EmotionComponent from './Style/Emotion/components/EmotionComponent';
 import EmotionComponentAdvanced from './Style/Emotion/components/EmotionComponentAdvanced';
+import SassComponent from './Style/Sass/components/SassComponent';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <StyledComponent /> */}
       {/* <StyledComponentAdvanced /> */}
       {/* <EmotionComponent /> */}
-      <EmotionComponentAdvanced />
+      {/* <EmotionComponentAdvanced /> */}
+      <SassComponent />
     </div>
   );
 }

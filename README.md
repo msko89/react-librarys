@@ -17,3 +17,11 @@ npm i @emotion/styled @emotion/react
 ```
 
 https://emotion.sh/docs/introduction
+
+- ### **sass**
+
+```properties
+npm i sass
+```
+
+https://sass-lang.com/
