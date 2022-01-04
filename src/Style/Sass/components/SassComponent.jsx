@@ -29,6 +29,9 @@ function SassComponent() {
       <p className='success2'>success2</p>
       <p className='error'>error</p>
       <p className='warning'>warning</p>
+      <br />
+      <div className='square-av'>message</div>
+      <div className='circle-av'>success2</div>
     </>
   );
 }
