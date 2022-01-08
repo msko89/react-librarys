@@ -1,12 +1,13 @@
 import './App.css';
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
-import StyledComponent from './Style/StyledComponent/components/StyledComponent';
-import StyledComponentAdvanced from './Style/StyledComponent/components/StyledComponentAdvanced';
-import EmotionComponent from './Style/Emotion/components/EmotionComponent';
-import EmotionComponentAdvanced from './Style/Emotion/components/EmotionComponentAdvanced';
-import SassComponent from './Style/Sass/components/SassComponent';
-import OnsenUiComponent from './UI/OnsenUI/components/OnsenUiComponent';
+// import 'onsenui/css/onsenui.css';
+// import 'onsenui/css/onsen-css-components.css';
+// import StyledComponent from './Style/StyledComponent/components/StyledComponent';
+// import StyledComponentAdvanced from './Style/StyledComponent/components/StyledComponentAdvanced';
+// import EmotionComponent from './Style/Emotion/components/EmotionComponent';
+// import EmotionComponentAdvanced from './Style/Emotion/components/EmotionComponentAdvanced';
+// import SassComponent from './Style/Sass/components/SassComponent';
+// import OnsenUiComponent from './UI/OnsenUI/components/OnsenUiComponent';
+import AntDesignComponent from './UI/AngDesign/components/AntDesignComponent';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <EmotionComponent /> */}
       {/* <EmotionComponentAdvanced /> */}
       {/* <SassComponent /> */}
-      <OnsenUiComponent />
+      {/* <OnsenUiComponent /> */}
+      <AntDesignComponent />
     </div>
   );
 }
