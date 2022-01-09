@@ -1,6 +1,9 @@
 import './App.css';
-import Counter from './features/counter/Counter';
-import MockingComponent from './Mocking/MSW/components/MockingComponent';
+import { observableTodoStore } from './app/ObservableTodoStore';
+// import MobxComponent from './components/MobxComponent';
+import TodoList from './components/TodoList';
+// import Counter from './features/counter/Counter';
+// import MockingComponent from './Mocking/MSW/components/MockingComponent';
 // import 'onsenui/css/onsenui.css';
 // import 'onsenui/css/onsen-css-components.css';
 // import StyledComponent from './Style/StyledComponent/components/StyledComponent';
@@ -21,8 +24,10 @@ function App() {
       {/* <SassComponent /> */}
       {/* <OnsenUiComponent /> */}
       {/* <AntDesignComponent /> */}
-      <MockingComponent />
-      <Counter />
+      {/* <MockingComponent /> */}
+      {/* <Counter /> */}
+      {/* <MobxComponent /> */}
+      <TodoList store={observableTodoStore} />
     </div>
   );
 }
