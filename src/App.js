@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './features/counter/Counter';
 import MockingComponent from './Mocking/MSW/components/MockingComponent';
 // import 'onsenui/css/onsenui.css';
 // import 'onsenui/css/onsen-css-components.css';
@@ -21,6 +22,7 @@ function App() {
       {/* <OnsenUiComponent /> */}
       {/* <AntDesignComponent /> */}
       <MockingComponent />
+      <Counter />
     </div>
   );
 }
