@@ -2,6 +2,7 @@ import { RecoilRoot } from 'recoil';
 import './App.css';
 import FontButton from './Recoil/components/FontButton';
 import Text from './Recoil/components/Text';
+import TodoList from './Recoil/components/TodoList';
 // import { observableTodoStore } from './app/ObservableTodoStore';
 // import MobxComponent from './components/MobxComponent';
 // import TodoList from './components/TodoList';
@@ -34,6 +35,7 @@ function App() {
       <RecoilRoot>
         <FontButton />
         <Text />
+        <TodoList />
       </RecoilRoot>
     </div>
   );
