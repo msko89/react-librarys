@@ -1,7 +1,10 @@
+import { RecoilRoot } from 'recoil';
 import './App.css';
-import { observableTodoStore } from './app/ObservableTodoStore';
+import FontButton from './Recoil/components/FontButton';
+import Text from './Recoil/components/Text';
+// import { observableTodoStore } from './app/ObservableTodoStore';
 // import MobxComponent from './components/MobxComponent';
-import TodoList from './components/TodoList';
+// import TodoList from './components/TodoList';
 // import Counter from './features/counter/Counter';
 // import MockingComponent from './Mocking/MSW/components/MockingComponent';
 // import 'onsenui/css/onsenui.css';
@@ -27,7 +30,11 @@ function App() {
       {/* <MockingComponent /> */}
       {/* <Counter /> */}
       {/* <MobxComponent /> */}
-      <TodoList store={observableTodoStore} />
+      {/* <TodoList store={observableTodoStore} /> */}
+      <RecoilRoot>
+        <FontButton />
+        <Text />
+      </RecoilRoot>
     </div>
   );
 }
