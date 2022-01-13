@@ -1,6 +1,13 @@
 import { rest } from 'msw';
 
 export const handlers = [
+  rest.get('/api/user/123', (req, res, ctx) => {
+    return res(
+      ctx.json({
+        name: 'ko',
+      })
+    );
+  }),
   rest.get('/login', (req, res, ctx) => {
     return res(
       ctx.json({
