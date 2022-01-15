@@ -3,6 +3,7 @@ import './App.css';
 import FontButton from './Recoil/components/FontButton';
 import Text from './Recoil/components/Text';
 import TodoList from './Recoil/components/TodoList';
+import Cache from './SWR/components/Cache';
 import Profile from './SWR/components/Profile';
 // import { observableTodoStore } from './app/ObservableTodoStore';
 // import MobxComponent from './components/MobxComponent';
@@ -38,7 +39,8 @@ function App() {
         <Text />
         <TodoList />
       </RecoilRoot> */}
-      <Profile />
+      {/* <Profile /> */}
+      <Cache />
     </div>
   );
 }
