@@ -1,11 +1,15 @@
-import { RecoilRoot } from 'recoil';
+// import { RecoilRoot } from 'recoil';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import './App.css';
-import FontButton from './Recoil/components/FontButton';
-import Text from './Recoil/components/Text';
-import TodoList from './Recoil/components/TodoList';
-import Cache from './SWR/components/Cache';
-import Mutate from './SWR/components/Mutate';
-import Profile from './SWR/components/Profile';
+import Example from './ReactQuery/components/Example';
+import Todos from './ReactQuery/components/Todos';
+import { ReactQueryDevtools } from 'react-query/devtools';
+// import FontButton from './Recoil/components/FontButton';
+// import Text from './Recoil/components/Text';
+// import TodoList from './Recoil/components/TodoList';
+// import Cache from './SWR/components/Cache';
+// import Mutate from './SWR/components/Mutate';
+// import Profile from './SWR/components/Profile';
 // import { observableTodoStore } from './app/ObservableTodoStore';
 // import MobxComponent from './components/MobxComponent';
 // import TodoList from './components/TodoList';
@@ -20,6 +24,8 @@ import Profile from './SWR/components/Profile';
 // import SassComponent from './Style/Sass/components/SassComponent';
 // import OnsenUiComponent from './UI/OnsenUI/components/OnsenUiComponent';
 // import AntDesignComponent from './UI/AngDesign/components/AntDesignComponent';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
@@ -42,7 +48,12 @@ function App() {
       </RecoilRoot> */}
       {/* <Profile /> */}
       {/* <Cache /> */}
-      <Mutate />
+      {/* <Mutate /> */}
+      <QueryClientProvider client={queryClient}>
+        <Example />
+        <Todos />
+        <ReactQueryDevtools />
+      </QueryClientProvider>
     </div>
   );
 }

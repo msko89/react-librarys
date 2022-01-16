@@ -1,6 +1,37 @@
 import { rest } from 'msw';
 
+const todos = [
+  {
+    id: '1',
+    title: 'title1',
+  },
+  {
+    id: '2',
+    title: 'title2',
+  },
+  {
+    id: '3',
+    title: 'title3',
+  },
+  {
+    id: '4',
+    title: 'title4',
+  },
+  {
+    id: '5',
+    title: 'title5',
+  },
+];
+
 export const handlers = [
+  rest.post('/api/todos', (req, res, ctx) => {
+    const { todo } = req.body;
+    todos.push(todo);
+    return res(ctx.json(true));
+  }),
+  rest.get('/api/todos', (req, res, ctx) => {
+    return res(ctx.json(todos));
+  }),
   rest.get('/api/user/:userId', (req, res, ctx) => {
     const { userId } = req.params;
     return res(
