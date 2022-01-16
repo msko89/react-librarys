@@ -4,6 +4,7 @@ import FontButton from './Recoil/components/FontButton';
 import Text from './Recoil/components/Text';
 import TodoList from './Recoil/components/TodoList';
 import Cache from './SWR/components/Cache';
+import Mutate from './SWR/components/Mutate';
 import Profile from './SWR/components/Profile';
 // import { observableTodoStore } from './app/ObservableTodoStore';
 // import MobxComponent from './components/MobxComponent';
@@ -40,7 +41,8 @@ function App() {
         <TodoList />
       </RecoilRoot> */}
       {/* <Profile /> */}
-      <Cache />
+      {/* <Cache /> */}
+      <Mutate />
     </div>
   );
 }
